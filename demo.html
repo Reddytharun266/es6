@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // var name="latha";
+       // function demo(){
+         //   var name1="hema";
+           // console.log(name);
+      //  }
+       // demo();
+        //console.log(name1);
+       
+       // let demo1=(x,y)=>{
+           // console.log(x+y)
+       // }
+       // console.log(demo1(3,4))
+
+
+      // let list=[1,2,3,34543,34325,6]
+      // list.forEach(x=> console.log(x*2))
+    //  list.map(x => console.log(x*2))
+
+
+    //objects
+    let employee={
+        name:"ankitha",
+        age:25,
+        designation:"software developer"
+    }
+    console.log(employee.designation);
+
+    //destructuring objects
+    let {name,age,designation}=employee;
+    console.log(name);
+    console.log(age);
+    console.log(designation);
+
+    //desturcturong objects
+    let employees=["aparna","bhavani","chandu","divya"]
+    let [name1,name2,name3,name4]=employees;
+    console.log(name1);
+    console.log(name2);
+    console.log(name3);
+    console.log(name4);
+
+    //spread operator
+    let [name5,...remaindata]=employees;
+    console.log(name5);
+    console.log(remaindata);
+
+
+   // let a=8;b=9;
+    //[a,b]=[b,a]
+   // console.log(a);
+    //console.log(b);
+
+    //rest parameter
+    function addition(x,y,...remainlist){
+        console.log(x);
+        console.log(y);
+        console.log(remainlist);
+
+    }
+    addition(82,51,32,44,26);
+    
+    
+
+    </script>
+</body>
+</html>
